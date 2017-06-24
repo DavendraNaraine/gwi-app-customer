@@ -1,18 +1,39 @@
 <!--
-  Generated template for the LoginPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
+Generated template for the LoginPage page.
+See http://ionicframework.com/docs/components/#navigation for more info on
+Ionic pages and navigation.
 -->
-<ion-header>
 
-  <ion-navbar>
-    <ion-title>login</ion-title>
-  </ion-navbar>
+<ion-content id="body" ion-grid padding>
+  <ion-row>
+    <!--logo -->
+    <ion-col text-center col-12 col-sm-6>
+      <img id="logo-img" src="assets/icon.png">
+    </ion-col>
 
-</ion-header>
+    <!--login/sign-up  -->
+    <ion-col col-12 col-sm-6>
+      <form>
+        <ion-list>
+          <ion-item>
+            <ion-label>Email</ion-label>
+            <ion-input type="email"></ion-input>
+          </ion-item>
 
-
-<ion-content padding>
-
+          <ion-item>
+            <ion-label>Password</ion-label>
+            <ion-input *ngIf='!showPassword' type="password"></ion-input>
+            <ion-input *ngIf='showPassword' type="text"></ion-input>
+            <button type="button" ion-button round icon-only clear item-right (tap)="showPassword = !showPassword">
+              <ion-icon *ngIf='!showPassword' name="eye"></ion-icon>
+              <ion-icon *ngIf='showPassword' name="eye-off"></ion-icon>
+            </button>
+          </ion-item>
+        </ion-list> 
+        <button class="login-button" type="submit" ion-button round full [disabled]="">LogIn</button>
+        <button class="login-button" ion-button round full color="facebook">Login With Facebook</button>
+        <button ion-button clear full>Or Create An Account</button>
+      </form>
+    </ion-col>
+  </ion-row>
 </ion-content>
