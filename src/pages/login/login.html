@@ -15,12 +15,12 @@ Ionic pages and navigation.
     <ion-col col-12 col-sm-6>
       <form>
 
-        <ion-segment [(ngModel)]="decision" [ngModelOptions]="{standalone: true}">
+        <ion-segment class="segment" [(ngModel)]="decision" [ngModelOptions]="{standalone: true}">
           <ion-segment-button value="login" >LOGIN</ion-segment-button>
           <ion-segment-button value="sign-up" name="sign-up">SIGN UP</ion-segment-button>
         </ion-segment>
 
-        <ion-list>
+        <ion-list class="list">
           <ion-item>
             <ion-label>Email</ion-label>
             <ion-input type="email"></ion-input>

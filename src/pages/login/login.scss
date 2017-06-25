@@ -6,6 +6,10 @@ page-login {
     max-width: 25%;
     max-height: 25%;
   }
-  $segment-button-md-text-color-activated: yellow;
-  $segment-button-md-border-color-activated: red;
+  .segment {
+    //background: #fff;
+  }
+  .list {
+    padding-top: 20px;
+  }
 }
