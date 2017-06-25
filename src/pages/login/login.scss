@@ -1,13 +1,11 @@
 page-login {
   #body {
-    background-color:#0066cc;
+    background-color: #0066cc;
   }
   #logo-img {
-    max-width:25%;
-    max-height:25%;
+    max-width: 25%;
+    max-height: 25%;
   }
-  .login-button {
-    background-color:#fff !important;  
-    color:#0066cc;
-  }
+  $segment-button-md-text-color-activated: yellow;
+  $segment-button-md-border-color-activated: red;
 }

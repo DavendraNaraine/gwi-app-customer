@@ -15,7 +15,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class LoginPage {
 
+  decision: string = "login";
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
   }
 
   ionViewDidLoad() {
