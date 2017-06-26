@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { SignUpPage } from '../sign-up/sign-up';
 
 /**
  * Generated class for the LoginPage page.
@@ -16,9 +17,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class LoginPage {
 
   login: string = "true";
+  signup = SignUpPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
   }
 
   ionViewDidLoad() {

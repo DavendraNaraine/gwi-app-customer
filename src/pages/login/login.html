@@ -10,16 +10,16 @@ Ionic pages and navigation.
     <ion-col text-center col-12 col-sm-6>
       <img id="logo-img" src="assets/icon.png">
     </ion-col>
-    <!--logo end-->
+    <!--end logo-->
 
     <!--login/sign-up button-->
     <ion-col col-12 col-sm-6>
 
       <ion-segment [(ngModel)]="login">
         <ion-segment-button value="true">LOGIN</ion-segment-button>
-        <ion-segment-button value="false" name="sign-up">SIGN UP</ion-segment-button>
+        <ion-segment-button value="false" name="sign-up" [navPush]="signup">SIGN UP</ion-segment-button>
       </ion-segment>
-    <!--login/sign-up button end-->
+    <!--end login/sign-up button-->
 
       <!--login form-->
       <form>
