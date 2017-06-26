@@ -90,7 +90,25 @@ $colors: (
 
 //Custom Styles
 //---------------------------------------------------
-$segment-button-md-text-color-activated: #fff;	
-$segment-button-md-border-color-activated: #f4f4f4;
 $segment-button-md-font-size: 1.5rem;
+$segment-button-md-text-color-activated: #0066cc;	
+$segment-button-md-border-color-activated: #0066cc;
+
+  #body {
+    background-color: #f4f4f4;
+  }
+  #logo-img {
+    max-width: 25%;
+    max-height: 25%;
+  }
+  .login-signup-form {
+    padding-top: 20px;
+  }
+  .bottom-btns {
+    padding-top: 20px;
+  }
+  .btns {
+    margin-top: 10px;
+  }
+
 

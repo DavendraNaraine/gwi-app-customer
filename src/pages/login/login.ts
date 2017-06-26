@@ -15,7 +15,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class LoginPage {
 
-  decision: string = "login";
+  login: string = "true";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
